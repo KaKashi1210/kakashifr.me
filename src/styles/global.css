@@ -1,0 +1,25 @@
+html {
+  background-color: #00151d;
+  font-family: sans-serif;
+}
+
+body {
+   justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 60ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: auto;
+  font-size: 2.5rem;
+}
+.about_body{
+    color: white;
+}
