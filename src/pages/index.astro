@@ -1,5 +1,7 @@
 ---
-import Navigation from './../components/Navigation.astro'
+import Header from './../components/Header.astro'
+import Footer from './../components/Footer.astro'
+import './../styles/global.css'
 ---
 
 <html lang="en">
@@ -10,10 +12,10 @@ import Navigation from './../components/Navigation.astro'
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body >
+  <body class="text-white" >
 
-    <Navigation/>
+    <Header/>
     <h1>Astro</h1>
-
+  <Footer/>
   </body>
 </html>
