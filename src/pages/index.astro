@@ -1,22 +1,10 @@
 ---
-import Navbar from '../components/Navbar.astro'
+import Base from './../layouts/Base.astro'
+
+const title = "home >> kakashifr "
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Home - Kakashifr</title>
-	</head>
-	<body class="bg-zinc-900">
+<Base description="" title={title}>
+<p class="text-white mt-8">hello</p>
+</Base>
 
-	<Navbar/>
-	
-	<div class=" flex items-center max-w-[52rem] mx-auto text-white mt-10 text-4xl font-sans"	>
-	Yo, Kakashi here :) 
-	</div>
-
-	</body>
-</html>
