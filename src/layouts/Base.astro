@@ -1,8 +1,9 @@
 ---
 const {description,title} = Astro.props
+import Grain from "../lib/grainsbg/Grain.astro"
 ---
 
-<html lang="en" >
+<html lang="en">
   <head>
 
  <meta charset="utf-8" />
@@ -15,9 +16,10 @@ const {description,title} = Astro.props
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" sizes="180x180" />
     <title>{title}</title>
   </head>
-  <body class="bg-zinc-900 mx-auto max-w-container text-justify">
-    <main>
+  <body class="bg-zinc-900">
+    <div class="mx-auto max-w-container px-4">
     <slot/>
-    </main>
+    </div>
+    <Grain opacity={100}/>
   </body>
 </html>

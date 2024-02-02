@@ -1,21 +1,21 @@
 ---
+const ogImage = import.meta.env.PUBLIC_OG_IMAGE
 ---
 
+<nav class="flex flex-row justify-between items-center py-8">
+  <div class="flex flex-row items-center">
+    <img src={ogImage} class='rounded-full h-20 w-20' />
+    <div class="flex flex-col ml-3">
+      <span class='font-sans font-bold text-4xl text-white '> kakashifr </span>
+        <small class="text-gray-600 dark:text-gray-500">
+         IPA /kɑːˈkɑː.ʃi/ — カカシ 
+      </small>
+    </div>
+  </div>
 
-
-<div class='flex items-center max-w-[52rem] mt-10 mx-auto'>
-
-<a href=''>
-<img src='https://pfp-for-social-struggle.s3.ap-south-1.amazonaws.com/1690221382739.png' class='rounded-full h-16 w-16' />
-</a>
-<span class='font-sans font-bold text-2xl text-white ml-3'> Kakashifr </span>
-</div>
-
-<nav class='flex items-center  mt-5 max-w-[52rem] mx-auto'>
-
-
-<a href="/" class='text-white hover:underline hover:underline-offset-4 '> Home </a>
-<a href="/blog" class='text-white lg:ml-5 hover:underline hover:underline-offset-4'> Blog </a>
-<a href="/projects" class='text-white lg:ml-5 hover:underline hover:underline-offset-4'> Projects </a>
-
+  <div class="flex flex-row items-center gap-4">
+    <span class='font-sans font-bold text-2xl text-white ml-3'> blogs </span>
+<button id="themeToggle" class="border border-slate-600 rounded-md h-9 w-9 hover:border-slate-50 transition-all hover:scale-105 duration-300"> </button>
+  </div>
 </nav>
+
