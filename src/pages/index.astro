@@ -1,11 +1,54 @@
 ---
 import Base from './../layouts/Base.astro'
 import Navbar from '../components/Navbar.astro'
-
+import Ruler from '../components/Ruler.astro' 
+import Container from '../components/Container.astro'
+import BlogHero from '../components/BlogHero.astro'
+import Footer from '../components/Footer.astro'
 const title = "home >> kakashifr "
+//const Projects 
 ---
 
 <Base description="" title={title}>
   <Navbar/>
+
+  <Ruler/>
+
+  <main>
+    <p class="text-white w-full font-sans">
+      Lorem ipsum, dolor sit amet consectetur  awaa adipisicing elit. Sed id reiciendis consequuntur labore hic magnam officiis libero incidunt velit illum repudiandae est at ut harum culpa, animi optio, nostrum fuga!
+      Lorem ipsum, dolor sit amet consectetur  awaa adipisicing elit. Sed id reiciendis consequuntur labore hic magnam officiis libero incidunt velit illum repudiandae est at ut harum culpa, animi optio, nostrum fuga!
+      Lorem ipsum, dolor sit amet consectetur  awaa adipisicing elit. Sed id reiciendis consequuntur labore hic magnam officiis libero incidunt velit illum repudiandae est at ut harum culpa, animi optio, nostrum fuga!
+    </p>
+  </main>
+
+  <Ruler/>
+
+  <h2 class="my-4 font-sans font-bold text-3xl text-white ">Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3">
+    <Container/>
+    <Container/>
+    <Container/>
+    <Container/>
+    <Container/>
+    <Container/>
+  </div>
+
+  <Ruler/>
+
+  <h2 class="my-4 font-sans font-bold text-3xl text-white">Latest blogs</h2>
+
+  <div>
+    <BlogHero blogTitle='lorem' blogDescription='lorem ipsum lorem'/>
+    <BlogHero blogTitle='lorem' blogDescription='lorem ipsum lorem'/>
+    <BlogHero blogTitle='lorem' blogDescription='lorem ipsum lorem'/>
+    <BlogHero blogTitle='lorem' blogDescription='lorem ipsum lorem'/>
+  </div>
+
+  <Ruler/>
+
+  <Footer/>
+
 </Base>
 
